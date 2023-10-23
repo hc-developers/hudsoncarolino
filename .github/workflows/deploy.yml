@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - main
-
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
+    env:
+      LC_ALL: "en_US.UTF-8"
+      LANG: "en_US.UTF-8"
 
     steps:
       - name: Checkout code
