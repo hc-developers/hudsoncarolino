@@ -19,4 +19,4 @@ jobs:
           ssh-private-key: ${{ secrets.TI_HUDSONCAROLINO_SSH_PRIVATE_KEY }}
 
       - name: Deploy app - QA Environment
-        run: ssh -o StrictHostKeyChecking=no -p 22022 hudsoncarolino@162.240.52.227 '/deploy.sh/deploy.sh'
+        run: ssh -o StrictHostKeyChecking=no -p 22022 hudsoncarolino@162.240.52.227 '/deploysite.sh'
